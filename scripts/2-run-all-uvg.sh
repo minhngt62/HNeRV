@@ -6,20 +6,26 @@ ffmpeg -pix_fmt yuv420p -s 1920x1080 -i data/Beauty_1920x1080_120fps_420_8bit_YU
 
 python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/Beauty_1920x1080_120fps_420_8bit_YUV" --vid beauty \
     --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
-    --resize_list -1 --loss Fusion6  --enc_strds 5 4 3 2 --enc_dim 64_16 \
-    --dec_strds 5 4 3 2 --ks 0_1_5 --reduce 1.2 --dump_images \
+    --resize_list -1 --loss Fusion6  --enc_strds 5 3 2 2 2 --enc_dim 64_16 \
+    --dec_strds 5 3 2 2 2 --ks 0_1_5 --reduce 1.2 --dump_images \
     --modelsize 3 -e 300 --eval_freq 150 --lower_width 12 -b 2 --lr 0.001
 
 python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/Beauty_1920x1080_120fps_420_8bit_YUV" --vid beauty \
     --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
-    --resize_list -1 --loss Fusion6  --enc_strds 5 4 3 2 --enc_dim 64_16 \
-    --dec_strds 5 4 3 2 --ks 0_1_5 --reduce 1.2 --dump_images \
+    --resize_list -1 --loss Fusion6  --enc_strds 5 3 2 2 2 --enc_dim 64_16 \
+    --dec_strds 5 3 2 2 2 --ks 0_1_5 --reduce 1.2 --dump_images \
     --modelsize 6 -e 300 --eval_freq 150 --lower_width 12 -b 2 --lr 0.001
 
 python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/Beauty_1920x1080_120fps_420_8bit_YUV" --vid beauty \
     --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
-    --resize_list -1 --loss Fusion6  --enc_strds 5 4 3 2 --enc_dim 64_16 \
-    --dec_strds 5 4 3 2 --ks 0_1_5 --reduce 1.2 --dump_images \
+    --resize_list -1 --loss Fusion6  --enc_strds 5 3 2 2 2 --enc_dim 64_16 \
+    --dec_strds 5 3 2 2 2 --ks 0_1_5 --reduce 1.2 --dump_images \
+    --modelsize  -e 300 --eval_freq 150 --lower_width 12 -b 2 --lr 0.001
+
+python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/Beauty_1920x1080_120fps_420_8bit_YUV" --vid beauty \
+    --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
+    --resize_list -1 --loss Fusion6  --enc_strds 5 3 2 2 2 --enc_dim 64_16 \
+    --dec_strds 5 3 2 2 2 --ks 0_1_5 --reduce 1.2 --dump_images \
     --modelsize 12 -e 300 --eval_freq 150 --lower_width 12 -b 2 --lr 0.001
 
 # HoneyBee
@@ -28,20 +34,26 @@ ffmpeg -pix_fmt yuv420p -s 1920x1080 -i data/HoneyBee_1920x1080_120fps_420_8bit_
 
 python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/HoneyBee_1920x1080_120fps_420_8bit_YUV" --vid honey \
     --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
-    --resize_list -1 --loss Fusion6  --enc_strds 5 4 3 2 --enc_dim 64_16 \
-    --dec_strds 5 4 3 2 --ks 0_1_5 --reduce 1.2 --dump_images \
+    --resize_list -1 --loss Fusion6  --enc_strds 5 3 2 2 2 --enc_dim 64_16 \
+    --dec_strds 5 3 2 2 2 --ks 0_1_5 --reduce 1.2 --dump_images \
     --modelsize 3 -e 300 --eval_freq 150 --lower_width 12 -b 2 --lr 0.001
 
 python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/HoneyBee_1920x1080_120fps_420_8bit_YUV" --vid honey \
     --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
-    --resize_list -1 --loss Fusion6  --enc_strds 5 4 3 2 --enc_dim 64_16 \
-    --dec_strds 5 4 3 2 --ks 0_1_5 --reduce 1.2 --dump_images \
+    --resize_list -1 --loss Fusion6  --enc_strds 5 3 2 2 2 --enc_dim 64_16 \
+    --dec_strds 5 3 2 2 2 --ks 0_1_5 --reduce 1.2 --dump_images \
     --modelsize 6 -e 300 --eval_freq 150 --lower_width 12 -b 2 --lr 0.001
 
 python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/HoneyBee_1920x1080_120fps_420_8bit_YUV" --vid honey \
     --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
-    --resize_list -1 --loss Fusion6  --enc_strds 5 4 3 2 --enc_dim 64_16 \
-    --dec_strds 5 4 3 2 --ks 0_1_5 --reduce 1.2 --dump_images \
+    --resize_list -1 --loss Fusion6  --enc_strds 5 3 2 2 2 --enc_dim 64_16 \
+    --dec_strds 5 3 2 2 2 --ks 0_1_5 --reduce 1.2 --dump_images \
+    --modelsize 9 -e 300 --eval_freq 150 --lower_width 12 -b 2 --lr 0.001
+
+python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/HoneyBee_1920x1080_120fps_420_8bit_YUV" --vid honey \
+    --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
+    --resize_list -1 --loss Fusion6  --enc_strds 5 3 2 2 2 --enc_dim 64_16 \
+    --dec_strds 5 3 2 2 2 --ks 0_1_5 --reduce 1.2 --dump_images \
     --modelsize 12 -e 300 --eval_freq 150 --lower_width 12 -b 2 --lr 0.001
 
 # Bosphorus
@@ -50,20 +62,26 @@ ffmpeg -pix_fmt yuv420p -s 1920x1080 -i data/Bosphorus_1920x1080_120fps_420_8bit
 
 python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/Bosphorus_1920x1080_120fps_420_8bit_YUV" --vid bosphorus \
     --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
-    --resize_list -1 --loss Fusion6  --enc_strds 5 4 3 2 --enc_dim 64_16 \
-    --dec_strds 5 4 3 2 --ks 0_1_5 --reduce 1.2 --dump_images \
+    --resize_list -1 --loss Fusion6  --enc_strds 5 3 2 2 2 --enc_dim 64_16 \
+    --dec_strds 5 3 2 2 2 --ks 0_1_5 --reduce 1.2 --dump_images \
     --modelsize 3 -e 300 --eval_freq 150 --lower_width 12 -b 2 --lr 0.001
 
 python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/Bosphorus_1920x1080_120fps_420_8bit_YUV" --vid bosphorus \
     --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
-    --resize_list -1 --loss Fusion6  --enc_strds 5 4 3 2 --enc_dim 64_16 \
-    --dec_strds 5 4 3 2 --ks 0_1_5 --reduce 1.2 --dump_images \
+    --resize_list -1 --loss Fusion6  --enc_strds 5 3 2 2 2 --enc_dim 64_16 \
+    --dec_strds 5 3 2 2 2 --ks 0_1_5 --reduce 1.2 --dump_images \
     --modelsize 6 -e 300 --eval_freq 150 --lower_width 12 -b 2 --lr 0.001
 
 python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/Bosphorus_1920x1080_120fps_420_8bit_YUV" --vid bosphorus \
     --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
-    --resize_list -1 --loss Fusion6  --enc_strds 5 4 3 2 --enc_dim 64_16 \
-    --dec_strds 5 4 3 2 --ks 0_1_5 --reduce 1.2 --dump_images \
+    --resize_list -1 --loss Fusion6  --enc_strds 5 3 2 2 2 --enc_dim 64_16 \
+    --dec_strds 5 3 2 2 2 --ks 0_1_5 --reduce 1.2 --dump_images \
+    --modelsize 9 -e 300 --eval_freq 150 --lower_width 12 -b 2 --lr 0.001
+
+python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/Bosphorus_1920x1080_120fps_420_8bit_YUV" --vid bosphorus \
+    --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
+    --resize_list -1 --loss Fusion6  --enc_strds 5 3 2 2 2 --enc_dim 64_16 \
+    --dec_strds 5 3 2 2 2 --ks 0_1_5 --reduce 1.2 --dump_images \
     --modelsize 12 -e 300 --eval_freq 150 --lower_width 12 -b 2 --lr 0.001
 
 # Jockey
@@ -72,20 +90,26 @@ ffmpeg -pix_fmt yuv420p -s 1920x1080 -i data/Jockey_1920x1080_120fps_420_8bit_YU
 
 python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/Jockey_1920x1080_120fps_420_8bit_YUV" --vid jockey \
     --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
-    --resize_list -1 --loss Fusion6  --enc_strds 5 4 3 2 --enc_dim 64_16 \
-    --dec_strds 5 4 3 2 --ks 0_1_5 --reduce 1.2 --dump_images \
+    --resize_list -1 --loss Fusion6  --enc_strds 5 3 2 2 2 --enc_dim 64_16 \
+    --dec_strds 5 3 2 2 2 --ks 0_1_5 --reduce 1.2 --dump_images \
     --modelsize 3 -e 300 --eval_freq 150 --lower_width 12 -b 2 --lr 0.001
 
 python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/Jockey_1920x1080_120fps_420_8bit_YUV" --vid jockey \
     --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
-    --resize_list -1 --loss Fusion6  --enc_strds 5 4 3 2 --enc_dim 64_16 \
-    --dec_strds 5 4 3 2 --ks 0_1_5 --reduce 1.2 --dump_images \
+    --resize_list -1 --loss Fusion6  --enc_strds 5 3 2 2 2 --enc_dim 64_16 \
+    --dec_strds 5 3 2 2 2 --ks 0_1_5 --reduce 1.2 --dump_images \
     --modelsize 6 -e 300 --eval_freq 150 --lower_width 12 -b 2 --lr 0.001
 
 python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/Jockey_1920x1080_120fps_420_8bit_YUV" --vid jockey \
     --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
-    --resize_list -1 --loss Fusion6  --enc_strds 5 4 3 2 --enc_dim 64_16 \
-    --dec_strds 5 4 3 2 --ks 0_1_5 --reduce 1.2 --dump_images \
+    --resize_list -1 --loss Fusion6  --enc_strds 5 3 2 2 2 --enc_dim 64_16 \
+    --dec_strds 5 3 2 2 2 --ks 0_1_5 --reduce 1.2 --dump_images \
+    --modelsize 9 -e 300 --eval_freq 150 --lower_width 12 -b 2 --lr 0.001
+
+python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/Jockey_1920x1080_120fps_420_8bit_YUV" --vid jockey \
+    --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
+    --resize_list -1 --loss Fusion6  --enc_strds 5 3 2 2 2 --enc_dim 64_16 \
+    --dec_strds 5 3 2 2 2 --ks 0_1_5 --reduce 1.2 --dump_images \
     --modelsize 12 -e 300 --eval_freq 150 --lower_width 12 -b 2 --lr 0.001
 
 # ReadySetGo
@@ -94,20 +118,26 @@ ffmpeg -pix_fmt yuv420p -s 1920x1080 -i data/ReadySteadyGo_1920x1080_120fps_420_
 
 python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/ReadySteadyGo_1920x1080_120fps_420_8bit_YUV" --vid ready \
     --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
-    --resize_list -1 --loss Fusion6  --enc_strds 5 4 3 2 --enc_dim 64_16 \
-    --dec_strds 5 4 3 2 --ks 0_1_5 --reduce 1.2 --dump_images \
+    --resize_list -1 --loss Fusion6  --enc_strds 5 3 2 2 2 --enc_dim 64_16 \
+    --dec_strds 5 3 2 2 2 --ks 0_1_5 --reduce 1.2 --dump_images \
     --modelsize 3 -e 300 --eval_freq 150 --lower_width 12 -b 2 --lr 0.001
 
 python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/ReadySteadyGo_1920x1080_120fps_420_8bit_YUV" --vid ready \
     --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
-    --resize_list -1 --loss Fusion6  --enc_strds 5 4 3 2 --enc_dim 64_16 \
-    --dec_strds 5 4 3 2 --ks 0_1_5 --reduce 1.2 --dump_images \
+    --resize_list -1 --loss Fusion6  --enc_strds 5 3 2 2 2 --enc_dim 64_16 \
+    --dec_strds 5 3 2 2 2 --ks 0_1_5 --reduce 1.2 --dump_images \
     --modelsize 6 -e 300 --eval_freq 150 --lower_width 12 -b 2 --lr 0.001
 
 python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/ReadySteadyGo_1920x1080_120fps_420_8bit_YUV" --vid ready \
     --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
-    --resize_list -1 --loss Fusion6  --enc_strds 5 4 3 2 --enc_dim 64_16 \
-    --dec_strds 5 4 3 2 --ks 0_1_5 --reduce 1.2 --dump_images \
+    --resize_list -1 --loss Fusion6  --enc_strds 5 3 2 2 2 --enc_dim 64_16 \
+    --dec_strds 5 3 2 2 2 --ks 0_1_5 --reduce 1.2 --dump_images \
+    --modelsize 9 -e 300 --eval_freq 150 --lower_width 12 -b 2 --lr 0.001
+
+python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/ReadySteadyGo_1920x1080_120fps_420_8bit_YUV" --vid ready \
+    --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
+    --resize_list -1 --loss Fusion6  --enc_strds 5 3 2 2 2 --enc_dim 64_16 \
+    --dec_strds 5 3 2 2 2 --ks 0_1_5 --reduce 1.2 --dump_images \
     --modelsize 12 -e 300 --eval_freq 150 --lower_width 12 -b 2 --lr 0.001
 
 # ShakenDry
@@ -116,20 +146,26 @@ ffmpeg -pix_fmt yuv420p -s 1920x1080 -i data/ShakeNDry_1920x1080_120fps_420_8bit
 
 python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/ShakeNDry_1920x1080_120fps_420_8bit_YUV" --vid shake \
     --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
-    --resize_list -1 --loss Fusion6  --enc_strds 5 4 3 2 --enc_dim 64_16 \
-    --dec_strds 5 4 3 2 --ks 0_1_5 --reduce 1.2 --dump_images \
+    --resize_list -1 --loss Fusion6  --enc_strds 5 3 2 2 2 --enc_dim 64_16 \
+    --dec_strds 5 3 2 2 2 --ks 0_1_5 --reduce 1.2 --dump_images \
     --modelsize 3 -e 300 --eval_freq 150 --lower_width 12 -b 2 --lr 0.001
 
 python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/ShakeNDry_1920x1080_120fps_420_8bit_YUV" --vid shake \
     --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
-    --resize_list -1 --loss Fusion6  --enc_strds 5 4 3 2 --enc_dim 64_16 \
-    --dec_strds 5 4 3 2 --ks 0_1_5 --reduce 1.2 --dump_images \
+    --resize_list -1 --loss Fusion6  --enc_strds 5 3 2 2 2 --enc_dim 64_16 \
+    --dec_strds 5 3 2 2 2 --ks 0_1_5 --reduce 1.2 --dump_images \
     --modelsize 6 -e 300 --eval_freq 150 --lower_width 12 -b 2 --lr 0.001
 
 python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/ShakeNDry_1920x1080_120fps_420_8bit_YUV" --vid shake \
     --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
-    --resize_list -1 --loss Fusion6  --enc_strds 5 4 3 2 --enc_dim 64_16 \
-    --dec_strds 5 4 3 2 --ks 0_1_5 --reduce 1.2 --dump_images \
+    --resize_list -1 --loss Fusion6  --enc_strds 5 3 2 2 2 --enc_dim 64_16 \
+    --dec_strds 5 3 2 2 2 --ks 0_1_5 --reduce 1.2 --dump_images \
+    --modelsize 9 -e 300 --eval_freq 150 --lower_width 12 -b 2 --lr 0.001
+
+python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/ShakeNDry_1920x1080_120fps_420_8bit_YUV" --vid shake \
+    --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
+    --resize_list -1 --loss Fusion6  --enc_strds 5 3 2 2 2 --enc_dim 64_16 \
+    --dec_strds 5 3 2 2 2 --ks 0_1_5 --reduce 1.2 --dump_images \
     --modelsize 12 -e 300 --eval_freq 150 --lower_width 12 -b 2 --lr 0.001
 
 # YachtRide
@@ -138,18 +174,24 @@ ffmpeg -pix_fmt yuv420p -s 1920x1080 -i data/YachtRide_1920x1080_120fps_420_8bit
 
 python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/YachtRide_1920x1080_120fps_420_8bit_YUV" --vid yatch \
     --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
-    --resize_list -1 --loss Fusion6  --enc_strds 5 4 3 2 --enc_dim 64_16 \
-    --dec_strds 5 4 3 2 --ks 0_1_5 --reduce 1.2 --dump_images \
+    --resize_list -1 --loss Fusion6  --enc_strds 5 3 2 2 2 --enc_dim 64_16 \
+    --dec_strds 5 3 2 2 2 --ks 0_1_5 --reduce 1.2 --dump_images \
     --modelsize 3 -e 300 --eval_freq 150 --lower_width 12 -b 2 --lr 0.001
 
 python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/YachtRide_1920x1080_120fps_420_8bit_YUV" --vid yatch \
     --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
-    --resize_list -1 --loss Fusion6  --enc_strds 5 4 3 2 --enc_dim 64_16 \
-    --dec_strds 5 4 3 2 --ks 0_1_5 --reduce 1.2 --dump_images \
+    --resize_list -1 --loss Fusion6  --enc_strds 5 3 2 2 2 --enc_dim 64_16 \
+    --dec_strds 5 3 2 2 2 --ks 0_1_5 --reduce 1.2 --dump_images \
     --modelsize 6 -e 300 --eval_freq 150 --lower_width 12 -b 2 --lr 0.001
 
 python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/YachtRide_1920x1080_120fps_420_8bit_YUV" --vid yatch \
     --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
-    --resize_list -1 --loss Fusion6  --enc_strds 5 4 3 2 --enc_dim 64_16 \
-    --dec_strds 5 4 3 2 --ks 0_1_5 --reduce 1.2 --dump_images \
+    --resize_list -1 --loss Fusion6  --enc_strds 5 3 2 2 2 --enc_dim 64_16 \
+    --dec_strds 5 3 2 2 2 --ks 0_1_5 --reduce 1.2 --dump_images \
+    --modelsize 9 -e 300 --eval_freq 150 --lower_width 12 -b 2 --lr 0.001
+
+python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/YachtRide_1920x1080_120fps_420_8bit_YUV" --vid yatch \
+    --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
+    --resize_list -1 --loss Fusion6  --enc_strds 5 3 2 2 2 --enc_dim 64_16 \
+    --dec_strds 5 3 2 2 2 --ks 0_1_5 --reduce 1.2 --dump_images \
     --modelsize 12 -e 300 --eval_freq 150 --lower_width 12 -b 2 --lr 0.001

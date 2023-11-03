@@ -2,7 +2,7 @@
 
 # Beauty
 mkdir -p data/uvg/Beauty_1920x1080_120fps_420_8bit_YUV
-ffmpeg -pix_fmt yuv420p -s 1920x1080 -i data/Beauty_1920x1080_120fps_420_8bit_YUV.yuv -f image2 data/uvg/Beauty_1920x1080_120fps_420_8bit_YUV/f%05d.png
+ffmpeg -pix_fmt yuv420p -s 1920x1080 -i /home/a100-5g/thangnv/CompressAI/examples/UVG_dataset/Beauty_1920x1080_120fps_420_8bit_YUV.yuv -f image2 data/uvg/Beauty_1920x1080_120fps_420_8bit_YUV/f%05d.png
 
 python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/Beauty_1920x1080_120fps_420_8bit_YUV" --vid beauty \
     --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
@@ -30,7 +30,7 @@ python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/Bea
 
 # HoneyBee
 mkdir -p data/uvg/HoneyBee_1920x1080_120fps_420_8bit_YUV
-ffmpeg -pix_fmt yuv420p -s 1920x1080 -i data/HoneyBee_1920x1080_120fps_420_8bit_YUV.yuv -f image2 data/uvg/HoneyBee_1920x1080_120fps_420_8bit_YUV/f%05d.png
+ffmpeg -pix_fmt yuv420p -s 1920x1080 -i /home/a100-5g/thangnv/CompressAI/examples/UVG_dataset/HoneyBee_1920x1080_120fps_420_8bit_YUV.yuv -f image2 data/uvg/HoneyBee_1920x1080_120fps_420_8bit_YUV/f%05d.png
 
 python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/HoneyBee_1920x1080_120fps_420_8bit_YUV" --vid honey \
     --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
@@ -58,7 +58,7 @@ python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/Hon
 
 # Bosphorus
 mkdir -p data/uvg/Bosphorus_1920x1080_120fps_420_8bit_YUV
-ffmpeg -pix_fmt yuv420p -s 1920x1080 -i data/Bosphorus_1920x1080_120fps_420_8bit_YUV.yuv -f image2 data/uvg/Bosphorus_1920x1080_120fps_420_8bit_YUV/f%05d.png
+ffmpeg -pix_fmt yuv420p -s 1920x1080 -i /home/a100-5g/thangnv/CompressAI/examples/UVG_dataset/Bosphorus_1920x1080_120fps_420_8bit_YUV.yuv -f image2 data/uvg/Bosphorus_1920x1080_120fps_420_8bit_YUV/f%05d.png
 
 python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/Bosphorus_1920x1080_120fps_420_8bit_YUV" --vid bosphorus \
     --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
@@ -86,7 +86,7 @@ python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/Bos
 
 # Jockey
 mkdir -p data/uvg/Jockey_1920x1080_120fps_420_8bit_YUV
-ffmpeg -pix_fmt yuv420p -s 1920x1080 -i data/Jockey_1920x1080_120fps_420_8bit_YUV.yuv -f image2 data/uvg/Jockey_1920x1080_120fps_420_8bit_YUV/f%05d.png
+ffmpeg -pix_fmt yuv420p -s 1920x1080 -i /home/a100-5g/thangnv/CompressAI/examples/UVG_dataset/Jockey_1920x1080_120fps_420_8bit_YUV.yuv -f image2 data/uvg/Jockey_1920x1080_120fps_420_8bit_YUV/f%05d.png
 
 python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/Jockey_1920x1080_120fps_420_8bit_YUV" --vid jockey \
     --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
@@ -114,7 +114,7 @@ python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/Joc
 
 # ReadySetGo
 mkdir -p data/uvg/ReadySteadyGo_1920x1080_120fps_420_8bit_YUV
-ffmpeg -pix_fmt yuv420p -s 1920x1080 -i data/ReadySteadyGo_1920x1080_120fps_420_8bit_YUV.yuv -f image2 data/uvg/ReadySteadyGo_1920x1080_120fps_420_8bit_YUV/f%05d.png
+ffmpeg -pix_fmt yuv420p -s 1920x1080 -i /home/a100-5g/thangnv/CompressAI/examples/UVG_dataset/ReadySteadyGo_1920x1080_120fps_420_8bit_YUV.yuv -f image2 data/uvg/ReadySteadyGo_1920x1080_120fps_420_8bit_YUV/f%05d.png
 
 python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/ReadySteadyGo_1920x1080_120fps_420_8bit_YUV" --vid ready \
     --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
@@ -142,7 +142,7 @@ python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/Rea
 
 # ShakenDry
 mkdir -p data/uvg/ShakeNDry_1920x1080_120fps_420_8bit_YUV
-ffmpeg -pix_fmt yuv420p -s 1920x1080 -i data/ShakeNDry_1920x1080_120fps_420_8bit_YUV.yuv -f image2 data/uvg/ShakeNDry_1920x1080_120fps_420_8bit_YUV/f%05d.png
+ffmpeg -pix_fmt yuv420p -s 1920x1080 -i /home/a100-5g/thangnv/CompressAI/examples/UVG_dataset/ShakeNDry_1920x1080_120fps_420_8bit_YUV.yuv -f image2 data/uvg/ShakeNDry_1920x1080_120fps_420_8bit_YUV/f%05d.png
 
 python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/ShakeNDry_1920x1080_120fps_420_8bit_YUV" --vid shake \
     --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \
@@ -170,7 +170,7 @@ python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/Sha
 
 # YachtRide
 mkdir -p data/uvg/YachtRide_1920x1080_120fps_420_8bit_YUV
-ffmpeg -pix_fmt yuv420p -s 1920x1080 -i data/YachtRide_1920x1080_120fps_420_8bit_YUV.yuv -f image2 data/uvg/YachtRide_1920x1080_120fps_420_8bit_YUV/f%05d.png
+ffmpeg -pix_fmt yuv420p -s 1920x1080 -i /home/a100-5g/thangnv/CompressAI/examples/UVG_dataset/YachtRide_1920x1080_120fps_420_8bit_YUV.yuv -f image2 data/uvg/YachtRide_1920x1080_120fps_420_8bit_YUV/f%05d.png
 
 python "HNeRV/train_nerv_all.py"  --outf "checkpoint"  --data_path "data/uvg/YachtRide_1920x1080_120fps_420_8bit_YUV" --vid yatch \
     --conv_type convnext pshuffel --act gelu --norm none  --crop_list 1080_1920  \

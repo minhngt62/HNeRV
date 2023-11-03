@@ -11,3 +11,4 @@ torchvision
 pytorch_msssim
 imageio
 pytorchvideo
+ptflops

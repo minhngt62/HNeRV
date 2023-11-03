@@ -21,6 +21,8 @@ from dahuffman import HuffmanCodec
 from torchvision.utils import save_image
 import pandas as pd
 
+from ptflops import get_model_complexity_info
+
 def main():
     parser = argparse.ArgumentParser()
     # Dataset parameters
@@ -192,6 +194,17 @@ def train(local_rank, args):
 
     # Building model
     model = HNeRV(args)
+
+    # Get FLOPS
+    with torch.no_grad():
+        macs, params = get_model_complexity_info(
+            model,
+            (1,),
+            as_strings=True,
+            print_per_layer_stat=True,
+            verbose=True,
+        )
+        print("{:<30}  {:<8}".format("Computational complexity: ", macs))
 
     ##### get model params and flops #####
     if local_rank in [0, None]:
